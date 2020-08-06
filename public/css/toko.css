@@ -1,0 +1,41 @@
+.wraper {
+    width: 90%;
+    margin: 10px auto;
+}
+/****** Navigation styling *******/
+.iso-nav {
+    text-align: center;
+}
+.iso-nav ul  li {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: inline-block;
+    padding: 10px 15px;
+    border: 1px solid #5274a9;
+    cursor: pointer;
+    -webkit-transition: all .5s ease;
+    -moz-transition: all .5s ease;
+    -ms-transition: all .5s ease;
+    transition: all .5s ease;
+}
+.iso-nav ul  li:hover {
+    background: #5274a9;
+    color: #fff;
+}
+/****** Main portfilio styling ********/
+
+.main-iso {
+    width: 100%;
+    
+}
+.main-iso .item {
+    width: 303px;
+    float: left;
+    margin-bottom: 10px;
+}
+
+.active .active {
+    background: #5274a9;
+    color: #fff;
+}

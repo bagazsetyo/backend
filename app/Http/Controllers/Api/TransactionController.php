@@ -1,0 +1,23 @@
+<?php
+
+namespace App\Http\Controllers\Api;
+
+use App\Http\Controllers\Controller;
+use Illuminate\Http\Request;
+use App\Models\Transaction;
+
+class TransactionController extends Controller
+{
+    public function get(Request $request, $id)
+    {
+    	$product = Transaction::with('details.product')->find($id);
+
+    	if ($product) 
+    	{
+	    	return ResponseFormatter::success($product,'Data Produck Berhasil di ambil');	
+    	}else{
+	    	return ResponseFormatter::error(null,'Data transaksi', 404);	
+    	}
+
+    }
+}
